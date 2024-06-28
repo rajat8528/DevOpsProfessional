@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: custom
-        image: rajat8528/capstone
+        image: rajat8528/image
         ports:
-        - containerPort: 80
+        - containerPort: 85
