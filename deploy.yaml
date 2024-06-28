@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: custom-deployment
+  name: mydeploy
   labels:
-    app: custom
+    app: mydeploy
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: custom
+      app: mydeploy
   template:
     metadata:
       labels:
-        app: custom
+        app: mydeploy
     spec:
       containers:
-      - name: custom
+      - name: mydeploy
         image: rajat8528/image
         ports:
         - containerPort: 85

@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-custom-deployment
+  name: mydeploy
 spec:
   type: NodePort
   ports:
@@ -9,4 +9,4 @@ spec:
       port: 85
       nodePort: 30001
   selector:
-    app: custom
+    app: mydeploy
